@@ -2,6 +2,10 @@
   "name": "privon",
   "version": "0.1.0",
   "description": "Generate privacy policy and terms of use pages for web projects with AI.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TosmimForidMehtab/Privon.git"
+  },
   "type": "module",
   "main": "./src/index.js",
   "exports": {
