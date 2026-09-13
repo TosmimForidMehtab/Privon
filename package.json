@@ -1,0 +1,42 @@
+{
+  "name": "privon",
+  "version": "0.1.0",
+  "description": "Generate privacy policy and terms of use pages for web projects with AI.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./ai": "./src/ai/client.js"
+  },
+  "bin": {
+    "privon": "./bin/privon.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check bin/privon.js && node --check src/index.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "privacy-policy",
+    "terms-of-use",
+    "legal",
+    "ai",
+    "sdk",
+    "nextjs",
+    "react",
+    "angular"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
